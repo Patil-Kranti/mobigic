@@ -1,0 +1,43 @@
+name: mobigic_test
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.2.6 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_screenutil: ^5.9.0
+  get: ^4.6.6
+  nb_utils: ^6.1.2
+  rive: ^0.12.4
+
+dev_dependencies:
+  flutter_launcher_icons: "^0.13.1"
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.8
+  flutter_gen_runner: null
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/word.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  image_path_ios: "assets/images/word.png"
+  remove_alpha_ios: true
+
+flutter_gen:
+  integrations:
+  rive: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/animation/
+    - assets/images/
